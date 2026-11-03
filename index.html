@@ -2,116 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nadi Sihsetya Gayuh Ukira's portfolio: AI, machine learning, and software projects." />
   <title>Nadi | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Nadi Sihsetya Gayuh Ukira</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <div class="background-decor decor-one"></div>
+  <div class="background-decor decor-two"></div>
+  <div class="sparkle sparkle-one">✦</div>
+  <div class="sparkle sparkle-two">✧</div>
+  <div class="sparkle sparkle-three">✦</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">✦</span>
+      <span>Nadi Sihsetya Gayuh Ukira</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a class="nav-link active" href="#about">About</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Informatics Engineering student at Brawijaya University passionate about data and machine learning. Experienced with SQL/NoSQL databases, familiar with API and backend technologies, and capable of working across the full stack to deliver scalable applications.
-      </p>
-    </section>
+  <main id="home">
+    <section class="about-section" id="about">
+      <div class="profile-frame">
+        <!-- Ganti profile.jpg. -->
+        <img src="profile.jpg" alt="Nadi's profile" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div class="profile-fallback">N</div>
+        <span class="profile-sparkle">✧</span>
+      </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
+      <div class="about-content">
+        <p class="eyebrow">GREETINGS, I'M NADI!</p>
+        <h1>About <span>Me</span></h1>
+        <p class="about-description">
+          Informatics Engineering graduate from Brawijaya University with an interest in
+          Artificial Intelligence and Machine Learning. Experienced in developing machine
+          learning models, natural language processing workflows, and data-driven applications
+          through academic projects and practical training.
+        </p>
 
-        <div class="project-card">
-          <div class="card-icon"><i class="fas fa-brain"></i></div>
-          <h3>MBTI Classifier</h3>
-          <p class="role">ML Engineer</p>
-          <p>Personality type classifier using PySpark ML pipeline with HDFS integration.</p>
-          <a href="https://github.com/ukirra/mbti-pyspark-classification" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
+        <div class="profile-info">
+          <div class="info-pill">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Brawijaya University</span>
+          </div>
+          <div class="info-pill">
+            <i class="fa-solid fa-code"></i>
+            <span>Informatics Engineering</span>
+          </div>
+          <div class="info-pill">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>GPA 3.61 / 4.00</span>
+          </div>
         </div>
 
-        <div class="project-card">
-          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3>CNN Intrusion Detection</h3>
-          <p class="role">Algorithm Engineer</p>
-          <p>Intrusion detection system using a CNN model on the CICIDS dataset.</p>
-          <a href="https://github.com/ukirra/cnn-intrusion-detection" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
+        <div class="interest-line">
+          <span>EXPERIENCED IN</span>
+          <p>Artificial Intelligence <b>·</b> Machine Learning <b>·</b> LLM <b>·</b> NLP <b>·</b> MLOps</p>
         </div>
-
-        <div class="project-card">
-          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-          <h3>Psyche Research Trend Analyzer</h3>
-          <p class="role">NLP Engineer, Data Engineer, & MLOps</p>
-          <p>Research trend analysis tool using PubMed data and BERT-based topic modeling.</p>
-          <a href="https://github.com/tasyakaa/PsycheTrend" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card">
-          <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
-          <h3>Task Scheduler App</h3>
-          <p class="role">Python Developer</p>
-          <p>Desktop app for automated task scheduling using tkinter and datetime.</p>
-          <a href="https://github.com/ukirra/task-scheduler" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card">
-          <div class="card-icon"><i class="fas fa-book-open"></i></div>
-          <h3>Story App</h3>
-          <p class="role">Fullstack Developer</p>
-          <p>MERN stack platform for creating, managing, and reading stories with chapter and cover management.</p>
-          <a href="https://github.com/ukirra/story-app" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </div>
-
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        <i class="fas fa-envelope"></i>
-        <a href="https://mail.google.com/mail/?view=cm&to=nadisihsetya@gmail.com" target="_blank"> nadisihsetya@gmail.com</a>
-      </p>
-      <p>
-        <i class="fas fa-phone"></i>
-        <a href="tel:+6285643591026">+62 856-4359-1026</a>
-      </p>
-      <p>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/ukirra" target="_blank">github.com/ukirra</a>
-      </p>
-      <p>
-        <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/ukira" target="_blank">linkedin.com/in/ukira</a>
-      </p>
+    <section class="projects-section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A FEW THINGS I'VE BUILT</p>
+          <h2>Selected <span>Projects</span></h2>
+        </div>
+        <span class="heading-decoration">✧</span>
+      </div>
+
+      <div class="project-grid">
+          <article class="project-card">
+          <div class="project-top">
+            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <span class="project-number">02</span>
+          </div>
+          <h3>LLM-Based Online Gambling Content Classification and Reasoning</h3>
+          <p class="project-description">
+            Developed an LLM-based classification system to identify online gambling content using reasoning-based training data. Explored domain adaptation through Continued Pre-Training (CPT) and LoRA-based Supervised Fine-Tuning (SFT) on Qwen3-8B.
+          </p>
+          <div class="tech-stack">
+            <span>Python</span><span>LLM</span><span>Qwen3-8B</span><span>SFT</span><span>Gemini API</span>
+          </div>
+          <a class="project-link" href="https://github.com/ukirra/llm-based-online-gambling-content-classification-and-reasoning" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <span class="project-number">03</span>
+          </div>
+          <h3>Psyche Research Trend Analyzer</h3>
+          <p class="project-description">
+            Developed an NLP-based system to analyze mental health research trends using BERTopic on 5,000 research article titles. Integrated MLOps practices to support experiment tracking, model management, and deployment through a containerized pipeline.
+          </p>
+          <div class="tech-stack">
+            <span>Python</span><span>BeautifulSoup</span><span>BERTopic</span><span>Docker</span><span>MLflow</span><span>FastAPI</span>
+          </div>
+          <a class="project-link" href="https://github.com/tasyakaa/PsycheTrend" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <span class="project-number">01</span>
+          </div>
+          <h3>Cyberbullying Classification Using IndoBERT</h3>
+          <p class="project-description">
+            Analyzed the performance of IndoBERT in classifying cyberbullying across four Indonesian social media datasets. Compared binary and multiclass classification tasks using stratified 5-fold cross-validation to evaluate model performance and generalization.
+          </p>
+          <div class="tech-stack">
+            <span>Python</span><span>IndoBERT</span><span>Dataset</span><span>Multiclass</span>
+          </div>
+          <a class="project-link" href="https://github.com/ukirra/indobert-cyberbullying-classification" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <span class="project-number">01</span>
+          </div>
+          <h3>House Pricing Prediction</h3>
+          <p class="project-description">
+            Developed a machine learning model to predict house prices using property characteristics such as land area, building area, and number of rooms. Compared multiple regression algorithms and optimized Random Forest, achieving an R² score of 0.8465.
+          </p>
+          <div class="tech-stack">
+            <span>Python</span><span>Random Forest</span><span>XGBoost</span><span>Flask</span>
+          </div>
+          <a class="project-link" href="https://github.com/ukirra/house-pricing-prediction" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-heading contact-heading">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Get in <span>Touch</span></h2>
+        </div>
+        <p class="contact-note">Feel free to reach out.</p>
+      </div>
+
+      <div class="contact-list">
+        <a class="contact-item" href="mailto:nadisihsetya@gmail.com">
+          <i class="fa-regular fa-envelope"></i><span>nadisihsetya@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+6285643591026">
+          <i class="fa-solid fa-phone"></i><span>+62 856-4359-1026</span>
+        </a>
+        <a class="contact-item" href="https://github.com/ukirra" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i><span>github.com/ukirra</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/ukira" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i><span>linkedin.com/in/ukira</span>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Nadi Sihsetya Gayuh Ukira. All rights reserved.</p>
+    <span>All or nothing ✦</span>
+    <span>© 2026 Nadi Sihsetya Gayuh Ukira</span>
   </footer>
 </body>
 </html>
